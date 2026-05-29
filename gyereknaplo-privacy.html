@@ -1,0 +1,51 @@
+# Privacy Policy – GyerekNapló
+
+**Effective Date:** May 26, 2026
+
+This Privacy Policy describes how the "GyerekNapló" mobile application (hereinafter referred to as the "Application") handles user data. The Application is built with a strict "privacy-by-design" approach to ensure that your and your children's data remains entirely under your control.
+
+## 1. Data Controller
+The Application is developed and operated by [FEJLESZTŐI_NÉV_VAGY_CÉG] (hereinafter referred to as the "Developer"). 
+Contact Email: [KAPCSOLATTARTÁSI_EMAIL]
+
+## 2. Information Collection and Use
+
+### A) Local Storage (Room Database)
+The Application functions primarily as an offline log for parenting activities and child growth tracking. All personal data listed below is stored locally, directly on your Android device in a secure sandbox application database (Room Database):
+*   **Personal Names:** Names or nicknames of parents and children.
+*   **Activity Logs:** Timestamps and notes related to children's daily routines (e.g., bedtime, meals, medication/inhalation logs, preschool arrival/leave, play).
+*   **Growth Data:** Physical measurements of children, including weight (grams) and height (centimeters).
+*   **Application Preferences:** Settings regarding language, theme preferences, and color codes.
+
+**The Developer does NOT own, operate, or maintain any central servers. Your local application data never leaves your device automatically.**
+
+### B) User-Initiated Backups and Transfers (Google Drive & Local Storage)
+The Application includes features allowing you to export, back up, or restore your data. These transfers are strictly voluntary and must be initiated by you:
+*   **Google Drive Integration:** If you choose to enable the Google Drive synchronization feature, the Application utilizes the official Google Drive API to upload a structured backup (`.json` file) to your **own private Google Drive storage**. The Developer has no access to your Google Account credentials or the backup files stored in your personal cloud.
+*   **Local File Export (CSV/JSON):** You may export reports or complete database backups to your device's local document storage using the Android Storage Access Framework (SAF).
+
+## 3. Third-Party Services and SDKs
+To provide specific functionalities, the Application integrates the following trusted third-party services:
+*   **Google Auth / Drive Client Libraries:** Used exclusively to authenticate your Google Account and facilitate secure file transmission between the Application and your personal Google Drive storage.
+*   **Firebase Crashlytics:** Used to capture anonymous crash logs and stack traces to ensure the Application's stability. No personally identifiable information (PII), children's health logs, or activity notes are transmitted to Firebase.
+
+## 4. Permissions Used by the Application
+The Application requires certain system permissions to function correctly:
+*   `INTERNET`: Required solely to communicate with the Google Drive API for the backup/sync feature and for transmission of anonymous Firebase crash log data.
+*   `POST_NOTIFICATIONS`, `SCHEDULE_EXACT_ALARM`, `USE_EXACT_ALARM`: Used to trigger local parenting alerts and reminders on your device.
+*   `RECEIVE_BOOT_COMPLETED`: Used to reschedule your local notifications after your device reboots.
+
+## 5. Children's Privacy (COPPA & GDPR Compliance)
+Although the Application is designed for parents to log information about their children, **the Application does not knowingly collect, request, or harvest personal data from children directly.** All data is input manually by the parent or legal guardian and stays under their exclusive control on their local device or personal cloud.
+
+## 6. Data Deletion and Retention
+You retain complete ownership and sovereignty over your data:
+*   **In-App Deletion:** You can delete individual log entries, children's profiles, or metadata directly within the Application at any time.
+*   **Complete Purge:** Uninstalling the Application from your device instantly and permanently deletes the local Room database and all preferences stored on the device.
+*   **Cloud Deletion:** You can delete your backup files (`.json` and `.csv`) directly from your personal Google Drive storage at any time.
+
+## 7. Changes to This Privacy Policy
+The Developer may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Effective Date" at the top of this document.
+
+## 8. Contact Us
+If you have any questions or suggestions about this Privacy Policy, please contact us at: **[KAPCSOLATTARTÁSI_EMAIL]**
